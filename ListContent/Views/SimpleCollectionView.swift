@@ -9,6 +9,7 @@ import UIKit
 
 class SimpleCollectionView: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 	private var collectionView: UICollectionView!
+	private var headerRegistration: UICollectionView.CellRegistration<UICollectionViewListCell, String>!
 	private var cellRegistration: UICollectionView.CellRegistration<UICollectionViewListCell, Book>!
 
     override func viewDidLoad() {
@@ -16,7 +17,8 @@ class SimpleCollectionView: UIViewController, UICollectionViewDelegate, UICollec
 		// View title
 		title = "Books - Collection"
 		// Collection view layout
-		let config = UICollectionLayoutListConfiguration(appearance: .insetGrouped)
+		var config = UICollectionLayoutListConfiguration(appearance: .insetGrouped)
+		config.headerMode = .supplementary
 		let layout = UICollectionViewCompositionalLayout.list(using: config)
 		// Add collection view
 		collectionView = UICollectionView(frame: view.bounds, collectionViewLayout: layout)
@@ -24,6 +26,12 @@ class SimpleCollectionView: UIViewController, UICollectionViewDelegate, UICollec
 		view.addSubview(collectionView)
 		collectionView.delegate = self
 		collectionView.dataSource = self
+		// Header registration
+		headerRegistration = UICollectionView.CellRegistration<UICollectionViewListCell, String> { (cell, indexPath, item) in
+			var content = cell.defaultContentConfiguration()
+			content.text = item
+			cell.contentConfiguration = content
+		}
 		// Cell registration
 		cellRegistration = UICollectionView.CellRegistration<UICollectionViewListCell, Book> { cell, indexPath, book in
 			var content = cell.defaultContentConfiguration()
@@ -41,6 +49,12 @@ class SimpleCollectionView: UIViewController, UICollectionViewDelegate, UICollec
 
 	func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
 		return Book.booksFor(section: section).count
+	}
+
+	func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+		let section = Book.sections[indexPath.section]
+		let cell = collectionView.dequeueConfiguredReusableCell(using: headerRegistration, for: indexPath, item: section)
+		return cell
 	}
 
 	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
