@@ -9,21 +9,39 @@
 /* Begin PBXBuildFile section */
 		DD87B590253D0D7800E58705 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD87B58F253D0D7800E58705 /* AppDelegate.swift */; };
 		DD87B592253D0D7800E58705 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD87B591253D0D7800E58705 /* SceneDelegate.swift */; };
-		DD87B594253D0D7800E58705 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD87B593253D0D7800E58705 /* ViewController.swift */; };
 		DD87B597253D0D7800E58705 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD87B595253D0D7800E58705 /* Main.storyboard */; };
 		DD87B599253D0D7A00E58705 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD87B598253D0D7A00E58705 /* Assets.xcassets */; };
 		DD87B59C253D0D7A00E58705 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD87B59A253D0D7A00E58705 /* LaunchScreen.storyboard */; };
+		DD87B5A7253D10EB00E58705 /* SimpleTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD87B5A6253D10EB00E58705 /* SimpleTableView.swift */; };
+		DD87B5AD253D954500E58705 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD87B5AC253D954500E58705 /* MainViewController.swift */; };
+		DD87B5B1253D973A00E58705 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD87B5B0253D973A00E58705 /* Book.swift */; };
+		DD87B5BA253D9BF400E58705 /* SimpleCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD87B5B9253D9BF400E58705 /* SimpleCollectionView.swift */; };
+		DD87B5BD253D9C0B00E58705 /* SimpleStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD87B5BC253D9C0B00E58705 /* SimpleStackView.swift */; };
+		DD87B5C0253D9C2500E58705 /* DiffableTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD87B5BF253D9C2500E58705 /* DiffableTableView.swift */; };
+		DD87B5C3253D9C3B00E58705 /* DiffableCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD87B5C2253D9C3B00E58705 /* DiffableCollectionView.swift */; };
+		DD87B5C6253D9C9600E58705 /* CustomTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD87B5C5253D9C9600E58705 /* CustomTableView.swift */; };
+		DD87B5C9253D9CAA00E58705 /* CustomCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD87B5C8253D9CAA00E58705 /* CustomCollectionView.swift */; };
+		DD87B5CC253D9CBD00E58705 /* CustomStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD87B5CB253D9CBD00E58705 /* CustomStackView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DD87B58C253D0D7800E58705 /* ListContent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ListContent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD87B58F253D0D7800E58705 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD87B591253D0D7800E58705 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DD87B593253D0D7800E58705 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DD87B596253D0D7800E58705 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DD87B598253D0D7A00E58705 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD87B59B253D0D7A00E58705 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD87B59D253D0D7A00E58705 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD87B5A6253D10EB00E58705 /* SimpleTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTableView.swift; sourceTree = "<group>"; };
+		DD87B5AC253D954500E58705 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		DD87B5B0253D973A00E58705 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		DD87B5B9253D9BF400E58705 /* SimpleCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleCollectionView.swift; sourceTree = "<group>"; };
+		DD87B5BC253D9C0B00E58705 /* SimpleStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleStackView.swift; sourceTree = "<group>"; };
+		DD87B5BF253D9C2500E58705 /* DiffableTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiffableTableView.swift; sourceTree = "<group>"; };
+		DD87B5C2253D9C3B00E58705 /* DiffableCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiffableCollectionView.swift; sourceTree = "<group>"; };
+		DD87B5C5253D9C9600E58705 /* CustomTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableView.swift; sourceTree = "<group>"; };
+		DD87B5C8253D9CAA00E58705 /* CustomCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionView.swift; sourceTree = "<group>"; };
+		DD87B5CB253D9CBD00E58705 /* CustomStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomStackView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +74,48 @@
 		DD87B58E253D0D7800E58705 /* ListContent */ = {
 			isa = PBXGroup;
 			children = (
+				DD87B5B3253D974600E58705 /* Models */,
+				DD87B5B4253D975600E58705 /* Views */,
+				DD87B5B7253D978B00E58705 /* Resources */,
 				DD87B58F253D0D7800E58705 /* AppDelegate.swift */,
 				DD87B591253D0D7800E58705 /* SceneDelegate.swift */,
-				DD87B593253D0D7800E58705 /* ViewController.swift */,
-				DD87B595253D0D7800E58705 /* Main.storyboard */,
-				DD87B598253D0D7A00E58705 /* Assets.xcassets */,
-				DD87B59A253D0D7A00E58705 /* LaunchScreen.storyboard */,
 				DD87B59D253D0D7A00E58705 /* Info.plist */,
 			);
 			path = ListContent;
+			sourceTree = "<group>";
+		};
+		DD87B5B3253D974600E58705 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				DD87B5B0253D973A00E58705 /* Book.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		DD87B5B4253D975600E58705 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DD87B5A6253D10EB00E58705 /* SimpleTableView.swift */,
+				DD87B5AC253D954500E58705 /* MainViewController.swift */,
+				DD87B5B9253D9BF400E58705 /* SimpleCollectionView.swift */,
+				DD87B5BC253D9C0B00E58705 /* SimpleStackView.swift */,
+				DD87B5BF253D9C2500E58705 /* DiffableTableView.swift */,
+				DD87B5C2253D9C3B00E58705 /* DiffableCollectionView.swift */,
+				DD87B5C5253D9C9600E58705 /* CustomTableView.swift */,
+				DD87B5C8253D9CAA00E58705 /* CustomCollectionView.swift */,
+				DD87B5CB253D9CBD00E58705 /* CustomStackView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		DD87B5B7253D978B00E58705 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DD87B595253D0D7800E58705 /* Main.storyboard */,
+				DD87B598253D0D7A00E58705 /* Assets.xcassets */,
+				DD87B59A253D0D7A00E58705 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +188,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD87B594253D0D7800E58705 /* ViewController.swift in Sources */,
+				DD87B5CC253D9CBD00E58705 /* CustomStackView.swift in Sources */,
+				DD87B5C6253D9C9600E58705 /* CustomTableView.swift in Sources */,
 				DD87B590253D0D7800E58705 /* AppDelegate.swift in Sources */,
+				DD87B5B1253D973A00E58705 /* Book.swift in Sources */,
+				DD87B5C0253D9C2500E58705 /* DiffableTableView.swift in Sources */,
+				DD87B5A7253D10EB00E58705 /* SimpleTableView.swift in Sources */,
+				DD87B5AD253D954500E58705 /* MainViewController.swift in Sources */,
+				DD87B5BD253D9C0B00E58705 /* SimpleStackView.swift in Sources */,
+				DD87B5BA253D9BF400E58705 /* SimpleCollectionView.swift in Sources */,
 				DD87B592253D0D7800E58705 /* SceneDelegate.swift in Sources */,
+				DD87B5C3253D9C3B00E58705 /* DiffableCollectionView.swift in Sources */,
+				DD87B5C9253D9CAA00E58705 /* CustomCollectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
